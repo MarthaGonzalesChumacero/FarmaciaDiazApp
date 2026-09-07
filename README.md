@@ -103,13 +103,10 @@ El proyecto está organizado en componentes, pantallas y servicios para separar 
 
 ## Capturas de pantalla
 
-### Modo claro
-
-![Inventario modo claro](screenshots/inventario-modo-claro.png)
-
-### Modo oscuro
-
-![Inventario modo oscuro](screenshots/inventario-modo-oscuro.png)
+<p align="center">
+  <img src="screenshots/inventario-modo-claro.png" width="280" alt="Inventario modo claro" />
+  <img src="screenshots/inventario-modo-oscuro.png" width="280" alt="Inventario modo oscuro" />
+</p>
 
 ---
 
@@ -128,6 +125,18 @@ Registro del movimiento
 ```
 
 El registro de pedidos utiliza una transacción de Firestore para actualizar el stock y registrar el movimiento correspondiente.
+
+---
+
+## Servicios utilizados
+
+### Firebase Firestore
+
+Base de datos NoSQL utilizada para almacenar y sincronizar medicamentos, pedidos, stock y movimientos del inventario.
+
+### Cloudinary
+
+Servicio utilizado para almacenar las imágenes de los medicamentos tomadas desde la cámara o seleccionadas desde la galería.
 
 ---
 
@@ -151,9 +160,9 @@ La aplicación puede ejecutarse mediante Expo Go o un emulador Android.
 
 ## Seguridad
 
-La aplicación utiliza Firebase Authentication y reglas de seguridad de Firestore para controlar el acceso a los datos.
+La aplicación utiliza Firebase Authentication y reglas de Firestore para controlar el acceso a los datos.
 
-Los archivos que contienen claves privadas, como `serviceAccount.json`, no deben incluirse en el repositorio.
+Las claves privadas y archivos sensibles no se incluyen en el repositorio.
 
 ---
 
